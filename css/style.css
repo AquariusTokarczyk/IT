@@ -219,3 +219,16 @@ footer a:hover {
     max-height: 300px;
   }
 }
+/* Tło dla strony kontaktowej */
+.contact-section {
+  background: url('images/tlo_index.jpg') center/cover no-repeat;
+  position: relative;
+  padding: 120px 0;
+}
+.contact-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
