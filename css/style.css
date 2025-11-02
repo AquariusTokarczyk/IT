@@ -1,0 +1,221 @@
+/* ===============================
+   IT-HJÄLP – STYL GŁÓWNY
+   =============================== */
+
+:root {
+  --brand: #4ea8ff;
+  --bg: #0f172a;
+  --panel: #111827;
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+}
+
+* {
+  font-family: 'Inter', system-ui, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  scroll-behavior: smooth;
+  line-height: 1.6;
+}
+
+/* ===============================
+   NAWIGACJA
+   =============================== */
+
+.navbar.bg-dark {
+  background-color: #0d1326 !important;
+}
+
+.navbar a.nav-link.active {
+  color: var(--brand) !important;
+}
+
+/* ===============================
+   HERO
+   =============================== */
+
+.hero {
+  min-height: 50vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(0.45);
+  z-index: 0;
+}
+
+.hero-overlay {
+  position: relative;
+  z-index: 1;
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+
+.hero h1 {
+  font-size: 2.6rem;
+  font-weight: 700;
+}
+
+.hero p.lead {
+  font-size: 1.1rem;
+  color: var(--muted);
+}
+
+/* ===============================
+   PRZYCISKI
+   =============================== */
+
+.btn-primary {
+  background-color: var(--brand);
+  border-color: var(--brand);
+  color: #fff;
+  font-weight: 500;
+  transition: all 0.25s ease;
+}
+
+.btn-primary:hover {
+  background-color: #72bbff;
+  border-color: #72bbff;
+  transform: translateY(-2px);
+}
+
+.btn-outline-primary {
+  color: var(--brand);
+  border-color: var(--brand);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--brand);
+  color: #0b1224;
+}
+
+/* ===============================
+   SEKCJE
+   =============================== */
+
+section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.bg-body-tertiary {
+  background-color: #101830 !important;
+}
+
+.text-muted {
+  color: var(--muted) !important;
+}
+
+/* ===============================
+   KARTY (TJÄNSTER)
+   =============================== */
+
+.card {
+  background-color: #111a33;
+  border: none;
+  color: var(--text);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.card-img-top {
+  height: 220px;
+  object-fit: cover;
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
+}
+
+/* ===============================
+   OM MIG
+   =============================== */
+
+img.img-fluid {
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: 0.75rem;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+ul.list-unstyled li {
+  margin-bottom: 0.4rem;
+  color: var(--muted);
+}
+
+/* ===============================
+   CTA / KONTAKT
+   =============================== */
+
+section.text-center h3 {
+  font-weight: 600;
+  color: var(--text);
+}
+
+section.text-center p {
+  color: var(--muted);
+}
+
+/* ===============================
+   STOPKA
+   =============================== */
+
+footer {
+  background: #0d1326;
+  color: var(--muted);
+  padding: 3rem 0;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: var(--brand);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* ===============================
+   RESPONSYWNOŚĆ
+   =============================== */
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 1.9rem;
+  }
+
+  .hero p.lead {
+    font-size: 1rem;
+  }
+
+  .card-img-top {
+    height: 180px;
+  }
+
+  img.img-fluid {
+    max-height: 300px;
+  }
+}
