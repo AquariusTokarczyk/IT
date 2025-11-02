@@ -1,19 +1,42 @@
 <!DOCTYPE html>
 <html lang="sv">
-
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tack – IT Hjälp</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  </head>
-
-  <body class="bg-light d-flex align-items-center justify-content-center" style="height:100vh;">
-    <div class="text-center p-4 bg-white rounded shadow-sm">
-      <h1 class="fw-bold">Tack!</h1>
-      <p class="text-muted">Ditt meddelande har skickats. Jag kontaktar dig snarast.</p>
-      <a href="index.html" class="btn btn-outline-primary">Tillbaka till startsidan</a>
-    </div>
-  </body>
-
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tack för ditt meddelande!</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #0b132b;
+      color: #ffffff;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      background: url('images/tlo_index.jpg') center/cover no-repeat;
+    }
+    .message-box {
+      background: rgba(0, 0, 0, 0.75);
+      padding: 40px 60px;
+      border-radius: 16px;
+      box-shadow: 0 0 25px rgba(0,0,0,0.6);
+    }
+    h1 {
+      color: #5bc0be;
+      margin-bottom: 20px;
+    }
+    a.btn {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="message-box">
+    <h1>Tack för ditt meddelande!</h1>
+    <p>Jag har mottagit din förfrågan och återkommer så snart som möjligt.</p>
+    <a href="index.html" class="btn btn-primary">Tillbaka till startsidan</a>
+  </div>
+</body>
 </html>
